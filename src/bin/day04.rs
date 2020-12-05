@@ -2,7 +2,6 @@ use regex::Regex;
 
 mod input_processor;
 
-#[derive(Debug)]
 struct Passport {
     byr: usize,
     iyr: usize,

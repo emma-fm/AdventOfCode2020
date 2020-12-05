@@ -1,11 +1,5 @@
 mod input_processor;
 
-#[derive(Clone,Copy,PartialEq,Debug)]
-struct Seat {
-    row: usize,
-    column: usize
-}
-
 fn main() {
     let values = input_processor::dump_vec_separator("inputs/day05", '\n');
     let values = &values[0..values.len() - 1];
