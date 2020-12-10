@@ -28,7 +28,7 @@ fn main() {
 
     let res = calc_from(&values, 0, &mut cache);
 
-    println!("{}", res);
+    println!("Total possible combinations: {}", res);
 }
 
 fn calc_from(values: &Vec<usize>, i: usize, mut cache: &mut Vec<usize>) -> usize {
