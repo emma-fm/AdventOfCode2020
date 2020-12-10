@@ -17,3 +17,8 @@ pub fn dump_vec_separator(filename: &str, separator: char) -> Vec<String> {
 pub fn dump_vec_seq(filename: &str, seq: &str) -> Vec<String> {
     dump(filename).split(seq).map(|n| String::from(n)).collect()
 }
+
+#[allow(dead_code)]
+fn main() {
+    
+}
