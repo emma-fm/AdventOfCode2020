@@ -30,24 +30,24 @@ fn main() {
         }
     }
 
-    let mut empty = 0;
+    let mut seats = 0;
     let end = simulate(&cells);
     for line in end {
         let s : Vec<&char> = line.iter().filter(|c| **c == '#').collect();
-        empty += s.len();
+        seats += s.len();
     }
 
-    println!("Number of occupied seats: {}", empty);
+    println!("Number of occupied seats: {}", seats);
 
     let see = calc_see(&cells); // Calculate what seats sees every seat
     let end = simulate_see(&cells, &see); // Simulate with new rule
-    let mut empty = 0;
+    let mut seats = 0;
     for line in end {
         let s : Vec<&char> = line.iter().filter(|c| **c == '#').collect();
-        empty += s.len();
+        seats += s.len();
     }
 
-    println!("Number of occupied seats with 2nd algorithm: {}", empty);
+    println!("Number of occupied seats with 2nd algorithm: {}", seats);
 
 }
 
