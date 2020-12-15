@@ -20,4 +20,13 @@ fn main() {
     }
 
     println!("ID of the earliest * waiting minutes: {}", min.0 * (min.1 - departure));
+
+    let mut series : Vec<(usize,usize)> = Vec::new();
+    for (i,v) in values[1].split(',').enumerate() {
+        if v != "x" {
+            series.push((v.parse::<usize>().unwrap(),i));
+        }
+    }
+
+    
 }
