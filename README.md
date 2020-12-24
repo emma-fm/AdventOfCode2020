@@ -10,3 +10,5 @@ To solve a problem you need that day's input, located as /inputs/dayXX at the pr
 * Day 15 part 2
 * Day 19 part 2
 * Day 20 both parts
+* Day 21 both parts
+* Day 22 part 2
